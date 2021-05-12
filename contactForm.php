@@ -1,7 +1,6 @@
 <?php
     $name = $_POST['name'];
     $email = $_POST['email'];
-    $subject = $_POST['subject'];
     $message = $_POST['message']; 
 
 
@@ -11,8 +10,7 @@
 
     $email_body = "Username: $name. \n".
                     "User Email: $email. \n".
-                        "User Subject: $subject. \n".
-                            "User Message: $message. \n";
+                        "User Message: $message. \n";
 
 
     $to = "neja@sack.edu.lk";
@@ -21,8 +19,12 @@
 
     $headers = "Reply-To: $email \r \n";
 
-    mail($to,$email_subject,$email_body,$headers);
+    if(mail($to, $email_subject, $email_body, $headers)){
+        header("Location: index.html");
+    }else{
+        $errorMessage = 'Oops, something went wrong. Please try again later';
+    }
 
-    header("Location: index.html");
+    
 
 ?>
