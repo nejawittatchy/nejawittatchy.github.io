@@ -155,15 +155,23 @@
 							<section id="six">
 								<div class="container">
 									<h3>Contact Me</h3>
-									<form method="post" action="contactForm.php">
+									<script type="text/javascript">var submitted = false;</script>
+									<script>
+										function myFunction() {
+											alert("Thank You for the Message....");
+										}
+										</script>
+									<iframe name="hidden_iframe" id="hidden_iframe" style="display: none;" onload="if(submitted) {window.location = '';} "></iframe>
+									<form method="post" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScngj4C6Uv51y0KnT1xPsBpqXcCkVSeJb7RBv1gZRx-eewavg/formResponse" target="hidden_iframe" onsubmit="submitted=true">
+									<form method="post" action="">
 										<div class="row gtr-uniform">
-											<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" required /></div>
-											<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" required /></div>
-											<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" required /></div>
-											<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6" required ></textarea></div>
+											<div class="col-6 col-12-xsmall"><input type="text" name="entry.698062964" id="name" placeholder="Name" required /></div>
+											<div class="col-6 col-12-xsmall"><input type="email" name="entry.580503384" id="email" placeholder="Email" required /></div>
+											<div class="col-12"><input type="text" name="entry.615051181" id="subject" placeholder="Subject" required /></div>
+											<div class="col-12"><textarea name="entry.1818558075" id="message" placeholder="Message" rows="6" required ></textarea></div>
 											<div class="col-12">
 												<ul class="actions">
-													<li><input type="submit" class="primary" value="Send Message" /></li>
+													<li><input type="submit" class="primary" value="Send Message" onclick="myFunction()"/> </li>
 													<li><input type="reset" value="Reset Form" /></li>
 												</ul>
 											</div>
