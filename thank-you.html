@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Thank You - Neja Wittatchy</title>
+		<link rel="shortcut icon" href="images/profile2.ico">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Thank you for contacting Neja Wittatchy" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<div id="wrapper">
+			<div id="main">
+				<section>
+					<div class="container">
+						<header class="major">
+							<h2>Thank You!</h2>
+							<p>Your message has been sent successfully</p>
+						</header>
+						<div class="thank-you-content">
+							<p>I appreciate you taking the time to reach out. I'll get back to you as soon as possible!</p>
+							<div class="thank-you-image">
+								<img src="images/profile2.png" alt="Neja Wittatchy" />
+							</div>
+							<p>In the meantime, feel free to connect with me on social media or check out my projects.</p>
+							<ul class="actions special">
+								<li><a href="index.html" class="button primary">Return to Homepage</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<!-- Footer -->
+			<section id="footer">
+				<div class="container">
+					<ul class="copyright">
+						<li>&copy; 2025 Neja Wittatchy. All rights reserved.</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		
+		<style>
+			.thank-you-content {
+				text-align: center;
+				padding: 2em 0;
+			}
+			
+			.thank-you-image {
+				margin: 2em auto;
+				max-width: 200px;
+				border-radius: 50%;
+				overflow: hidden;
+				box-shadow: 0 0 15px rgba(0,0,0,0.1);
+			}
+			
+			.thank-you-image img {
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+			
+			.actions.special {
+				margin-top: 2em;
+			}
+			
+			/* Dark mode styles */
+			body.dark-mode .thank-you-content {
+				color: #e3e3e3;
+			}
+			
+			body.dark-mode .thank-you-image {
+				box-shadow: 0 0 15px rgba(0,0,0,0.3);
+			}
+		</style>
+		
+		<script>
+			// Initialize theme based on user preference
+			$(document).ready(function() {
+				const getCurrentTheme = () => {
+					// First check localStorage
+					const savedTheme = localStorage.getItem('theme');
+					if (savedTheme) {
+						return savedTheme;
+					}
+					
+					// If no saved preference, check system preference
+					if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+						return 'dark';
+					}
+					
+					// Default to light mode
+					return 'light';
+				};
+				
+				const setTheme = (theme) => {
+					if (theme === 'dark') {
+						$('body').addClass('dark-mode');
+					} else {
+						$('body').removeClass('dark-mode');
+					}
+				};
+				
+				// Initialize theme
+				setTheme(getCurrentTheme());
+			});
+		</script>
+	</body>
+</html>
