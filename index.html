@@ -2,25 +2,88 @@
 
 <html>
 	<head>
-		<title>Neja Wittatchy - Software Engineer</title>
+		<title>Neja Wittatchy - Software Engineer | Full-Stack Developer | Machine Learning Enthusiast</title>
 		<link rel="shortcut icon" href="images/profile2.ico">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Neja Wittatchy - Software Engineer specializing in full-stack development, mobile applications, and machine learning. BEng (Hons) Software Engineering graduate. View portfolio, projects, and skills." />
-		<meta name="keywords" content="Neja Wittatchy, Software Engineer, Full-Stack Developer, Mobile Development, Flutter, .NET Core, Machine Learning, BEng Software Engineering Graduate" />
+		<meta name="description" content="Neja Wittatchy - Software Engineer specializing in full-stack development, mobile applications, and machine learning. BEng (Hons) Software Engineering graduate with experience in .NET Core, Flutter, and enterprise applications." />
+		<meta name="keywords" content="Neja Wittatchy, Software Engineer, Full-Stack Developer, Mobile Development, Flutter, .NET Core, Machine Learning, BEng Software Engineering Graduate, Sri Lanka, Portfolio" />
+		<meta name="author" content="Neja Wittatchy" />
+		<meta name="robots" content="index, follow" />
+		<meta name="language" content="English" />
+		<meta name="revisit-after" content="7 days" />
+		<link rel="canonical" href="https://nejawittatchy.github.io/" />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://nejawittatchy.github.io/" />
+		<meta property="og:title" content="Neja Wittatchy - Software Engineer | Full-Stack Developer" />
+		<meta property="og:description" content="Software Engineer specializing in full-stack development, mobile applications, and machine learning. BEng (Hons) Software Engineering graduate with enterprise experience." />
+		<meta property="og:image" content="https://nejawittatchy.github.io/images/profile2.png" />
+		<meta property="og:image:alt" content="Neja Wittatchy - Software Engineer Profile" />
+		<meta property="og:site_name" content="Neja Wittatchy Portfolio" />
+		<meta property="og:locale" content="en_US" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://nejawittatchy.github.io/" />
+		<meta property="twitter:title" content="Neja Wittatchy - Software Engineer | Full-Stack Developer" />
+		<meta property="twitter:description" content="Software Engineer specializing in full-stack development, mobile applications, and machine learning. BEng (Hons) Software Engineering graduate." />
+		<meta property="twitter:image" content="https://nejawittatchy.github.io/images/profile2.png" />
+		<meta property="twitter:image:alt" content="Neja Wittatchy - Software Engineer Profile" />
+
+		<!-- Additional SEO and Performance -->
+		<meta name="theme-color" content="#795da9" />
+		<meta name="msapplication-TileColor" content="#795da9" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+		<meta name="apple-mobile-web-app-title" content="Neja Wittatchy" />
+
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+		<!-- Security Headers -->
+		<meta http-equiv="X-Content-Type-Options" content="nosniff" />
+		<meta http-equiv="X-Frame-Options" content="DENY" />
+		<meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+		<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+		<meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()" />
+
+		<!-- Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'GA_MEASUREMENT_ID');
+		</script>
 	</head>
 	<body class="is-preload">
+
+		<!-- Skip to main content link for accessibility -->
+		<a href="#main" class="skip-link">Skip to main content</a>
+
+		<!-- Loading Screen -->
+		<div id="loading-screen">
+			<div class="loading-content">
+				<div class="loading-spinner"></div>
+				<h2>Loading Portfolio...</h2>
+				<p>Preparing an amazing experience</p>
+			</div>
+		</div>
 
 		<!-- Header -->
 			<section id="header">
 				<header>
-					<span class="image avatar"><img src="images/profile2.png" alt="" /></span>
+					<span class="image avatar"><img src="images/profile2.png" alt="Neja Wittatchy - Software Engineer Profile Photo" /></span>
 					<h1 id="logo"><a href="#">Neja Wittatchy</a></h1>
 					<p>Software Engineer | Full-Stack Developer | Machine Learning Enthusiast</p>
 				</header>
-				<nav id="nav">
-					<ul>						<li><a href="#one" class="active">About Me</a></li>
+				<nav id="nav" role="navigation" aria-label="Main navigation">
+					<ul>
+						<li><a href="#one" class="active" aria-current="page">About Me</a></li>
 						<li><a href="#two">Education</a></li>
 						<li><a href="#four">Skills</a></li>
 						<li><a href="#five">Experience</a></li>
@@ -29,144 +92,146 @@
 						<li><a href="#six">Contact Me</a></li>
 					</ul>
 				</nav>
-				<footer>
+				<footer role="complementary" aria-label="Social media links">
 					<ul class="icons">
-						<li><a href="https://www.linkedin.com/in/nejawittatchy/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-						<li><a href="https://www.facebook.com/NejaWittatchy" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="https://instagram.com/nejawittatchy?igshid=1m1tem8keu96m" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="https://github.com/nejawittatchy" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="https://medium.com/@nejawittatchy" class="icon brands fa-medium"><span class="label">Medium</span></a></li>
+						<li><a href="https://www.linkedin.com/in/nejawittatchy/" class="icon brands fa-linkedin" aria-label="Visit Neja Wittatchy's LinkedIn profile"><span class="label">Linkedin</span></a></li>
+						<li><a href="https://www.facebook.com/NejaWittatchy" class="icon brands fa-facebook-f" aria-label="Visit Neja Wittatchy's Facebook profile"><span class="label">Facebook</span></a></li>
+						<li><a href="https://instagram.com/nejawittatchy?igshid=1m1tem8keu96m" class="icon brands fa-instagram" aria-label="Visit Neja Wittatchy's Instagram profile"><span class="label">Instagram</span></a></li>
+						<li><a href="https://github.com/nejawittatchy" class="icon brands fa-github" aria-label="Visit Neja Wittatchy's GitHub profile"><span class="label">Github</span></a></li>
+						<li><a href="https://medium.com/@nejawittatchy" class="icon brands fa-medium" aria-label="Visit Neja Wittatchy's Medium blog"><span class="label">Medium</span></a></li>
 
 					</ul>
 				</footer>
 			</section>
 
 		<!-- Wrapper -->			<div id="wrapper">
-				<!-- Back to Top Button -->				<a href="#" id="back-to-top" title="Back to Top">
+				<!-- Back to Top Button -->				<a href="#" id="back-to-top" title="Back to Top" aria-label="Scroll back to top of page">
 					<i class="fa fa-arrow-up" aria-hidden="true"></i>
 				</a>
 						<!-- Theme Toggle Button -->
-				<a href="#" id="theme-toggle" title="Toggle Dark/Light Mode">
+				<a href="#" id="theme-toggle" title="Toggle Dark/Light Mode" aria-label="Toggle between light and dark theme" role="button">
 					<i class="fa fa-moon" aria-hidden="true"></i>
 					<i class="fa fa-sun" aria-hidden="true" ></i>
 				</a>
 
 				<!-- Main -->
-					<div id="main">
+					<div id="main" role="main">
 
 						<!-- One -->
-							<section id="one">
+							<section id="one" aria-labelledby="about-heading" class="scroll-fade-in">
 								<div class="image main" data-position="center">
-									<img src="images/head.png" alt=""/>
+									<img src="images/head.png" alt="Professional background image representing software engineering and technology" />
 								</div>
-								<div class="container">									<header class="major">										<h2>About Me</h2>
+								<div class="container">
+									<header class="major">
+										<h2 id="about-heading">About Me</h2>
 										<p>Detail-oriented developer with a passion for innovation</p>
-									</header>									<p>I am a highly motivated and detail-oriented Software Engineering graduate with strong hands-on experience in full-stack development, mobile application development, and machine learning. I have a proven track record of delivering enterprise-grade web and mobile applications, building end-to-end solutions, and contributing to production deployments. Passionate about exploring emerging technologies, problem-solving, and building impactful software systems, I support colleagues with great team spirit and am committed to continuous learning and self-development.</p>
+									</header>
+									<p>I am a highly motivated and detail-oriented Software Engineering graduate with strong hands-on experience in full-stack development, mobile application development, and machine learning. I have a proven track record of delivering enterprise-grade web and mobile applications, building end-to-end solutions, and contributing to production deployments. Passionate about exploring emerging technologies, problem-solving, and building impactful software systems, I support colleagues with great team spirit and am committed to continuous learning and self-development.</p>
 								</div>
 							</section>
 
 
 						<!-- Two -->
-							<section id="two">
+							<section id="two" aria-labelledby="education-heading" class="scroll-slide-left">
 								<div class="container">
-									<div class="features">
+									<h2 id="education-heading" class="major">Education</h2>
+									<div class="features stagger-container">
 
-										<article>
-											<a href="https://www.westminster.ac.uk" class="image"><img src="images/uow.png" alt="" /></a>
+										<article class="stagger-item">
+											<a href="https://www.westminster.ac.uk" class="image" aria-label="University of Westminster website"><img src="images/uow.png" alt="University of Westminster logo" /></a>
 											<div class="inner">
-												<h4>BEng (Hons) in Software Engineering - University of Westminster, UK</h4>
+												<h3>BEng (Hons) in Software Engineering - University of Westminster, UK</h3>
 												<p>January 2021 - August 2025 (Completed)<br>Lower Secound Honours Graduate<br>Affiliate program with Informatics Institute of Technology (IIT) - InfoSchol scholar</p>
 											</div>
 										</article>
-										<article>
-											<a href="https://www.sack.edu.lk" class="image"><img src="images/PicsArt_05-11-02.07.32.jpg" alt="" /></a>
+										<article class="stagger-item">
+											<a href="https://www.sack.edu.lk" class="image" aria-label="St. Anthony's College website"><img src="images/PicsArt_05-11-02.07.32.jpg" alt="St. Anthony's College logo" /></a>
 											<div class="inner">
-												<h4>Studied at St. Anthony's College Kandy from 2005 to 2019.</h4>
+												<h3>Studied at St. Anthony's College Kandy from 2005 to 2019.</h3>
 												<p>Passed O/Ls in 2015 with four 'A's and five 'B's. <br>
 												did A/Ls in Maths Stream with IT (2019) </p>
-											</div> 
+											</div>
 										</article>
 
 									</div>
 								</div>
 							</section>
-
-
 						<!-- Four -->
-						<section id="four">
-							<div class="container">								<h3>Skills & Interests</h3>
+						<section id="four" aria-labelledby="skills-heading" class="scroll-scale-in">
+							<div class="container">								<h3 id="skills-heading">Skills & Interests</h3>
 								<p><i>Professional skills and personal interests...</i> </p>								<h4>Technical Skills</h4>
 								
 								<div class="skills-container">
 									<div class="skill-category">
-										<h5><i class="icon solid fa-code"></i> Programming Languages</h5>
+										<h5><i class="icon solid fa-code" aria-hidden="true"></i> Programming Languages</h5>
 										<div class="skill-item">
 											<span>C#</span>
-											<div class="progress-bar">
+											<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="C# proficiency level">
 												<div class="progress" style="width: 85%;"></div>
 											</div>
 										</div>
 										<div class="skill-item">
 											<span>Java</span>
-											<div class="progress-bar">
+											<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Java proficiency level">
 												<div class="progress" style="width: 75%;"></div>
 											</div>
 										</div>
 										<div class="skill-item">
 											<span>Python</span>
-											<div class="progress-bar">
+											<div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="Python proficiency level">
 												<div class="progress" style="width: 65%;"></div>
 											</div>
 										</div>
 										<div class="skill-item">
 											<span>Dart</span>
-											<div class="progress-bar">
+											<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="Dart proficiency level">
 												<div class="progress" style="width: 50%;"></div>
 											</div>
 										</div>
 										<div class="skill-item">
 											<span>JavaScript</span>
-											<div class="progress-bar">
+											<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript proficiency level">
 												<div class="progress" style="width: 50%;"></div>
 											</div>
 										</div>
 										<div class="skill-item">
 											<span>SQL</span>
-											<div class="progress-bar">
+											<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="SQL proficiency level">
 												<div class="progress" style="width: 85%;"></div>
 											</div>
 										</div>
 									</div>
 									
 									<div class="skill-category">
-										<h5><i class="icon solid fa-layer-group"></i> Frameworks & Tools</h5>
+										<h5><i class="icon solid fa-layer-group" aria-hidden="true"></i> Frameworks & Tools</h5>
 										<div class="skill-item">
 											<span>.NET Core</span>
-											<div class="progress-bar">
+											<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label=".NET Core proficiency level">
 												<div class="progress" style="width: 90%;"></div>
 											</div>
 										</div>
 										<div class="skill-item">
 											<span>Flutter</span>
-											<div class="progress-bar">
+											<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Flutter proficiency level">
 												<div class="progress" style="width: 75%;"></div>
 											</div>
 										</div>
 										<div class="skill-item">
 											<span>ASP.NET MVC</span>
-											<div class="progress-bar">
+											<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="ASP.NET MVC proficiency level">
 												<div class="progress" style="width: 80%;"></div>
 											</div>
 										</div>
 										<div class="skill-item">
 											<span>TensorFlow</span>
-											<div class="progress-bar">
+											<div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" aria-label="TensorFlow proficiency level">
 												<div class="progress" style="width: 55%;"></div>
 											</div>
 										</div>
 										<div class="skill-item">
 											<span>Git & CI/CD</span>
-											<div class="progress-bar">
+											<div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" aria-label="Git and CI/CD proficiency level">
 												<div class="progress" style="width: 55%;"></div>
 											</div>
 										</div>
@@ -492,26 +557,48 @@
 									margin-bottom: 2em;
 								}
 
-								.certification-tile {
-									display: flex;
-									background: rgba(144, 144, 144, 0.075);
-									border-radius: 8px;
-									padding: 1em 1em 1em 1.5em;
-									cursor: pointer;
-									transition: all 0.3s ease;
-									border: 1px solid transparent;
-									box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-									min-height: 80px;
-									align-items: center;
-									justify-content: space-between;
-								}
+				.certification-tile {
+					display: flex;
+					background: rgba(255, 255, 255, 0.1);
+					backdrop-filter: blur(10px);
+					-webkit-backdrop-filter: blur(10px);
+					border: 1px solid rgba(255, 255, 255, 0.2);
+					border-radius: 16px;
+					padding: 1em 1em 1em 1.5em;
+					cursor: pointer;
+					transition: all 0.3s ease;
+					border-radius: 16px;
+					box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+					min-height: 80px;
+					align-items: center;
+					justify-content: space-between;
+					position: relative;
+					overflow: hidden;
+				}
 
-								.certification-tile:hover {
-									transform: translateY(-3px);
-									box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-									border-color: #49bf9d;
-									background: rgba(73, 191, 157, 0.05);
-								}
+				.certification-tile::before {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					height: 2px;
+					background: linear-gradient(90deg, #795da9, #a68ce8, #795da9);
+					opacity: 0;
+					transition: opacity 0.3s ease;
+				}
+
+				.certification-tile:hover::before {
+					opacity: 1;
+				}
+
+				.certification-tile:hover {
+					transform: translateY(-5px);
+					box-shadow: 0 12px 40px rgba(121, 93, 169, 0.2);
+					background: rgba(255, 255, 255, 0.15);
+					backdrop-filter: blur(15px);
+					-webkit-backdrop-filter: blur(15px);
+				}
 
 								.cert-image {
 									flex: 0 0 90px;
@@ -551,15 +638,15 @@
 								.institution-logo img {
 									width: 100%;
 									height: 100%;
-									max-width: 70px;
-									max-height: 70px;
+									max-width: 50px;
+									max-height: 50px;
 									object-fit: contain;
 									border-radius: 4px;
 								}
 
 								.cert-details h4 {
 									margin: 0 0 0.3em 0;
-									color: #49bf9d;
+									color: #795da9;
 									font-size: 1.1em;
 									font-weight: 600;
 								}
@@ -579,7 +666,7 @@
 
 								.cert-skills {
 									margin: 0;
-									color: #49bf9d;
+									color: #795da9;
 									font-size: 0.8em;
 									font-style: italic;
 								}
@@ -587,11 +674,11 @@
 								.achievements-section {
 									margin-top: 2em;
 									padding-top: 2em;
-									border-top: 1px solid rgba(144, 144, 144, 0.25);
+									border-top: 1px solid #e6e0f3;
 								}
 
 								.achievements-section h4 {
-									color: #49bf9d;
+									color: #795da9;
 									margin-bottom: 1em;
 								}
 
@@ -617,13 +704,13 @@
 								}
 
 								body.dark-mode .certification-tile:hover {
-									background: rgba(74, 202, 168, 0.05);
-									border-color: #4acaa8;
+									background: rgba(166, 140, 232, 0.05);
+									border-color: #a68ce8;
 									box-shadow: 0 5px 15px rgba(0,0,0,0.4);
 								}
 
 								body.dark-mode .cert-details h4 {
-									color: #4acaa8;
+									color: #a68ce8;
 								}
 
 								body.dark-mode .cert-institute {
@@ -635,15 +722,15 @@
 								}
 
 								body.dark-mode .cert-skills {
-									color: #4acaa8;
+									color: #a68ce8;
 								}
 
 								body.dark-mode .achievements-section {
-									border-top-color: rgba(255,255,255,0.1);
+									border-top-color: rgba(166, 140, 232, 0.2);
 								}
 
 								body.dark-mode .achievements-section h4 {
-									color: #4acaa8;
+									color: #a68ce8;
 								}
 
 								body.dark-mode .achievements-section li {
@@ -681,8 +768,8 @@
 									}
 
 									.institution-logo img {
-										max-width: 60px;
-										max-height: 60px;
+										max-width: 45px;
+										max-height: 45px;
 									}
 								}
 							</style>
@@ -691,12 +778,12 @@
 						
 
 						<!-- Projects -->
-						<section id="projects">
+						<section id="projects" class="scroll-slide-right">
 							<div class="container">
 								<h3>Featured Projects</h3>
 								<p><i>Showcasing my recent work and research...</i></p>
-								<div class="projects-grid">
-									<div class="project-card">
+								<div class="projects-grid stagger-container">
+									<div class="project-card stagger-item">
 										<div class="project-image" style="background-image: url('images/projects/HasAruth.jpeg');">
 											<div class="project-overlay">
 												<h4>Sinhala Sign Language Recognition</h4>
@@ -717,7 +804,7 @@
 										</div>
 									</div>
 									
-									<div class="project-card">
+									<div class="project-card stagger-item">
 										<div class="project-image" style="background-image: url('images/projects/WiseWave.png');">
 											<div class="project-overlay">
 												<h4>Mental Health Monitoring App</h4>
@@ -769,15 +856,16 @@
 									}
 									
 									.project-card {
-										border-radius: 8px;
+										border-radius: 16px;
 										overflow: hidden;
-										box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-										transition: transform 0.3s ease, box-shadow 0.3s ease;
+										box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+										transition: all 0.3s ease;
+										position: relative;
 									}
 									
 									.project-card:hover {
-										transform: translateY(-5px);
-										box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+										transform: translateY(-8px);
+										box-shadow: 0 20px 60px rgba(121, 93, 169, 0.3);
 									}
 									
 									.project-image {
@@ -820,7 +908,7 @@
 									
 									.project-info {
 										padding: 1.5em;
-										background: #f5f5f5;
+										background: #f8f6ff;
 									}
 									
 									.tech-stack {
@@ -832,7 +920,7 @@
 									
 									.tech-tag {
 										padding: 0.3em 0.8em;
-										background: #49bf9d;
+										background: #795da9;
 										color: white;
 										border-radius: 20px;
 										font-size: 0.8em;
@@ -849,23 +937,23 @@
 							</div>
 						<!-- Six -->
 						</section>
-							<section id="six">
+							<section id="six" class="scroll-rotate-in">
 								<div class="container">
 									<h3>Contact Me</h3>
 									
 									<div class="contact-info-container">
-										<div class="contact-methods">
-											<div class="contact-method">
+										<div class="contact-methods stagger-container">
+											<div class="contact-method stagger-item">
 												<span class="icon solid alt fa-envelope"></span>
 												<h4>Email</h4>
 												<a href="mailto:nejawittatchy@gmail.com">nejawittatchy@gmail.com</a>
 											</div>
-											<div class="contact-method">
+											<div class="contact-method stagger-item">
 												<span class="icon solid alt fa-phone"></span>
 												<h4>Phone</h4>
 												<span>+94 710 337 936</span>
 											</div>
-											<div class="contact-method">
+											<div class="contact-method stagger-item">
 												<span class="icon solid alt fa-home"></span>
 												<h4>Address</h4>
 												<span>249/3, <br />CDL Fernando Lane,<br />
@@ -914,19 +1002,23 @@
 											</div>
 										</div>
 									</form>-->
-									<form action="https://formsubmit.co/neja.other@gmail.com" method="POST" autocomplete="off" target="_parent">
+									<form action="https://formsubmit.co/neja.other@gmail.com" method="POST" autocomplete="off" aria-labelledby="contact-form-heading">
 									<div class="row gtr-uniform">
 										<div class="col-6 col-12-xsmall">
-										<input type="text" name="name" id="name" placeholder="Name" required />
+										<label for="name" class="visually-hidden">Your Name</label>
+										<input type="text" name="name" id="name" placeholder="Name" required aria-required="true" />
 										</div>
 										<div class="col-6 col-12-xsmall">
-										<input type="email" name="email" id="email" placeholder="Email" required />
+										<label for="email" class="visually-hidden">Your Email</label>
+										<input type="email" name="email" id="email" placeholder="Email" required aria-required="true" />
 										</div>
 										<div class="col-12">
-										<input type="text" name="subject" id="subject" placeholder="Subject" required />
+										<label for="subject" class="visually-hidden">Message Subject</label>
+										<input type="text" name="subject" id="subject" placeholder="Subject" required aria-required="true" />
 										</div>
 										<div class="col-12">
-										<textarea name="message" id="message" placeholder="Message" rows="6" required></textarea>
+										<label for="message" class="visually-hidden">Your Message</label>
+										<textarea name="message" id="message" placeholder="Message" rows="6" required aria-required="true"></textarea>
 										</div>
 
 										<!-- Hidden fields for Formsubmit options -->
@@ -938,9 +1030,11 @@
 
 										<div class="col-12">
 										<ul class="actions">
-											<li><input type="submit" class="primary" value="Send Message" /></li>
-											<li><input type="reset" value="Reset Form" /></li>
+											<li><input type="submit" class="primary" value="Send Message" aria-describedby="submit-help" /></li>
+											<li><input type="reset" value="Reset Form" aria-describedby="reset-help" /></li>
 										</ul>
+										<div id="submit-help" class="visually-hidden">Click to send your message</div>
+										<div id="reset-help" class="visually-hidden">Click to clear the form</div>
 										</div>
 									</div>
 									</form>
@@ -978,20 +1072,45 @@
 									
 									.contact-method {
 										padding: 1.5em;
-										background: rgba(144, 144, 144, 0.075);
-										border-radius: 8px;
+										background: rgba(255, 255, 255, 0.1);
+										backdrop-filter: blur(10px);
+										-webkit-backdrop-filter: blur(10px);
+										border: 1px solid rgba(255, 255, 255, 0.2);
+										border-radius: 16px;
 										text-align: center;
 										transition: all 0.3s ease;
+										box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+										position: relative;
+										overflow: hidden;
 									}
-									
+
+									.contact-method::before {
+										content: '';
+										position: absolute;
+										top: 0;
+										left: 0;
+										right: 0;
+										bottom: 0;
+										background: linear-gradient(135deg, rgba(121, 93, 169, 0.1), rgba(166, 140, 232, 0.1));
+										opacity: 0;
+										transition: opacity 0.3s ease;
+									}
+
+									.contact-method:hover::before {
+										opacity: 1;
+									}
+
 									.contact-method:hover {
 										transform: translateY(-5px);
-										box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+										box-shadow: 0 12px 40px rgba(121, 93, 169, 0.2);
+										background: rgba(255, 255, 255, 0.15);
+										backdrop-filter: blur(15px);
+										-webkit-backdrop-filter: blur(15px);
 									}
 									
 									.contact-method .icon {
 										font-size: 2em;
-										color: #49bf9d;
+										color: #795da9;
 										margin-bottom: 0.5em;
 									}
 									
@@ -1015,6 +1134,7 @@
 										line-height: 50px;
 										text-align: center;
 										background: rgba(144, 144, 144, 0.075);
+										border: 1px solid #e6e0f3;
 										border-radius: 100%;
 										color: #666;
 										font-size: 1.25em;
@@ -1022,14 +1142,14 @@
 									}
 									
 									.social-icons li a:hover {
-										background: #49bf9d;
+										background: #795da9;
 										color: #fff;
 									}
 									
 									.contact-divider {
 										margin: 2em 0;
 										border: 0;
-										border-top: 1px solid rgba(144, 144, 144, 0.25);
+										border-top: 1px solid #e6e0f3;
 									}
 									
 									@media screen and (max-width: 736px) {
@@ -1064,9 +1184,15 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 					<script>
+				// Loading screen functionality
+				$(window).on('load', function() {
+					setTimeout(function() {
+						$('#loading-screen').addClass('hidden');
+						$('body').removeClass('is-preload');
+					}, 1000); // Minimum loading time for better UX
+				});
+
 				// Back to Top functionality
 				$(window).scroll(function() {
 					if ($(this).scrollTop() > 300) {
@@ -1203,6 +1329,82 @@
 						`width=${popupWidth},height=${popupHeight},left=${left},top=${top},scrollbars=yes,resizable=yes`
 					);
 				}
+
+				// Scroll-triggered animations using Intersection Observer
+				document.addEventListener('DOMContentLoaded', function() {
+					const observerOptions = {
+						threshold: 0.1,
+						rootMargin: '0px 0px -50px 0px'
+					};
+
+					const observer = new IntersectionObserver(function(entries) {
+						entries.forEach(entry => {
+							if (entry.isIntersecting) {
+								entry.target.classList.add('animate');
+							}
+						});
+					}, observerOptions);
+
+					// Observe elements for scroll animations
+					const animatedElements = document.querySelectorAll('.scroll-fade-in, .scroll-slide-left, .scroll-slide-right, .scroll-scale-in, .scroll-rotate-in');
+					animatedElements.forEach(element => {
+						observer.observe(element);
+					});
+
+					// Staggered animations for lists
+					const staggerContainers = document.querySelectorAll('.stagger-container');
+					staggerContainers.forEach(container => {
+						const items = container.querySelectorAll('.stagger-item');
+						const containerObserver = new IntersectionObserver(function(entries) {
+							entries.forEach(entry => {
+								if (entry.isIntersecting) {
+									items.forEach((item, index) => {
+										setTimeout(() => {
+											item.classList.add('animate');
+										}, index * 100);
+									});
+									containerObserver.unobserve(entry.target);
+								}
+							});
+						}, observerOptions);
+						containerObserver.observe(container);
+					});
+				});
+
+				// Enhanced animations with Intersection Observer
+				$(document).ready(function() {
+					// Intersection Observer for fade-in animations
+					const observerOptions = {
+						threshold: 0.1,
+						rootMargin: '0px 0px -50px 0px'
+					};
+
+					const observer = new IntersectionObserver((entries) => {
+						entries.forEach((entry, index) => {
+							if (entry.isIntersecting) {
+								setTimeout(() => {
+									entry.target.classList.add('fade-in');
+								}, index * 100); // Staggered animation
+								observer.unobserve(entry.target);
+							}
+						});
+					}, observerOptions);
+
+					// Observe certification tiles
+					$('.certification-tile').each(function() {
+						observer.observe(this);
+					});
+
+					// Observe project cards
+					$('.project-card').each(function() {
+						observer.observe(this);
+					});
+
+					// Observe contact methods
+					$('.contact-method').each(function() {
+						observer.observe(this);
+					});
+				});
 			</script>
 					<style>
 				#back-to-top, #theme-toggle {
@@ -1217,7 +1419,6 @@
 					font-size: 20px;
 					z-index: 99;
 					transition: all 0.3s;
-					box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 				}
 				
 				#back-to-top {
@@ -1226,18 +1427,23 @@
 					opacity: 0;
 					visibility: hidden;
 				}
-						#theme-toggle {
+				#theme-toggle {
 					top: 30px;
 					left: 30px;
+					text-decoration: none;
+					border: none;
+					outline: none;
+					box-shadow: none;
+					box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 				}
 				
 				#back-to-top:hover, #theme-toggle:hover {
-					background-color: rgb(184, 121, 12);
+					background-color: #d4af37;
 					transform: translateY(-3px);
 				}
 				
 				#back-to-top.show {
-					opacity: 5;
+					opacity: 1;
 					visibility: visible;
 				}
 						/* Add subtle animations to sections */
@@ -1306,7 +1512,7 @@
 				}
 				
 				body.dark-mode .progress {
-					box-shadow: 0 0 8px rgba(74, 202, 168, 0.5);
+					box-shadow: 0 0 8px rgba(121, 93, 169, 0.5);
 				}
 				
 				body.dark-mode .feature-icons li {
@@ -1323,7 +1529,7 @@
 				}
 				
 				body.dark-mode .tech-tag {
-					background: #357c6a;
+					background: #a68ce8;
 				}
 				
 				body.dark-mode input[type="text"],
@@ -1335,7 +1541,7 @@
 				}
 				
 				body.dark-mode input[type="submit"].primary {
-					background-color: #357c6a;
+					background-color: #795da9;
 				}
 				
 				body.dark-mode .contact-method {
@@ -1378,6 +1584,456 @@
 				/* Smooth transitions when switching themes */
 				body, body * {
 					transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+				}
+
+				/* Accessibility Improvements */
+				.visually-hidden {
+					position: absolute;
+					width: 1px;
+					height: 1px;
+					padding: 0;
+					margin: -1px;
+					overflow: hidden;
+					clip: rect(0, 0, 0, 0);
+					white-space: nowrap;
+					border: 0;
+				}
+
+				/* Focus indicators */
+				a:focus:not(#theme-toggle):not(#back-to-top), button:focus, input:focus, textarea:focus, select:focus {
+					outline: 2px solid #795da9;
+					outline-offset: 2px;
+					box-shadow: 0 0 0 3px rgba(121, 93, 169, 0.3);
+				}
+
+				body.dark-mode a:focus:not(#theme-toggle):not(#back-to-top), body.dark-mode button:focus, body.dark-mode input:focus, body.dark-mode textarea:focus, body.dark-mode select:focus {
+					outline-color: #a68ce8;
+					box-shadow: 0 0 0 3px rgba(166, 140, 232, 0.3);
+				}
+
+				/* Skip link for screen readers */
+				.skip-link {
+					position: absolute;
+					top: -40px;
+					left: 6px;
+					background: #795da9;
+					color: white;
+					padding: 8px;
+					text-decoration: none;
+					z-index: 100;
+					border-radius: 4px;
+					width: 1px;
+					height: 1px;
+					padding: 0;
+					margin: -1px;
+					overflow: hidden;
+					clip: rect(0, 0, 0, 0);
+					white-space: nowrap;
+					border: 0;
+				}
+
+				.skip-link:focus {
+					top: 6px;
+					left: 6px;
+					width: auto;
+					height: auto;
+					padding: 8px;
+					margin: 0;
+					overflow: visible;
+					clip: auto;
+					white-space: normal;
+				}
+
+				/* High contrast mode support */
+				@media (prefers-contrast: high) {
+					.certification-tile, .contact-method, .project-card {
+						border: 2px solid currentColor;
+					}
+				}
+
+				/* Reduced motion support */
+				@media (prefers-reduced-motion: reduce) {
+					*, *::before, *::after {
+						animation-duration: 0.01ms !important;
+						animation-iteration-count: 1 !important;
+						transition-duration: 0.01ms !important;
+					}
+				}
+
+				/* Modern Design Elements */
+				#main {
+					background: linear-gradient(135deg, rgba(121, 93, 169, 0.02) 0%, rgba(166, 140, 232, 0.02) 100%);
+					min-height: 100vh;
+				}
+
+				/* Enhanced button styles */
+				.button {
+					background: linear-gradient(135deg, #795da9 0%, #a68ce8 100%);
+					border: none;
+					border-radius: 25px;
+					padding: 0.8em 1.5em;
+					color: white;
+					text-decoration: none;
+					transition: all 0.3s ease;
+					box-shadow: 0 4px 15px rgba(121, 93, 169, 0.3);
+					position: relative;
+					overflow: hidden;
+				}
+
+				.button::before {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: -100%;
+					width: 100%;
+					height: 100%;
+					background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+					transition: left 0.5s;
+				}
+
+				.button:hover::before {
+					left: 100%;
+				}
+
+				.button:hover {
+					transform: translateY(-2px);
+					box-shadow: 0 8px 25px rgba(121, 93, 169, 0.4);
+				}
+
+				/* Modern input styles */
+				input[type="text"], input[type="email"], textarea {
+					border: 2px solid rgba(121, 93, 169, 0.2);
+					border-radius: 12px;
+					padding: 0.8em 1em;
+					transition: all 0.3s ease;
+					background: rgba(255, 255, 255, 0.8);
+					backdrop-filter: blur(10px);
+					-webkit-backdrop-filter: blur(10px);
+				}
+
+				input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+					border-color: #795da9;
+					box-shadow: 0 0 0 3px rgba(121, 93, 169, 0.1);
+					background: rgba(255, 255, 255, 0.95);
+				}
+
+				/* Enhanced social icons */
+				.social-icons li a {
+					display: block;
+					width: 50px;
+					height: 50px;
+					line-height: 50px;
+					text-align: center;
+					background: rgba(255, 255, 255, 0.1);
+					backdrop-filter: blur(10px);
+					-webkit-backdrop-filter: blur(10px);
+					border: 1px solid rgba(255, 255, 255, 0.2);
+					border-radius: 50%;
+					color: #666;
+					font-size: 1.25em;
+					transition: all 0.3s ease;
+					position: relative;
+					overflow: hidden;
+				}
+
+				.social-icons li a::before {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					background: linear-gradient(135deg, #795da9, #a68ce8);
+					opacity: 0;
+					transition: opacity 0.3s ease;
+				}
+
+				.social-icons li a:hover::before {
+					opacity: 1;
+				}
+
+				.social-icons li a:hover {
+					color: white;
+					transform: translateY(-3px);
+					box-shadow: 0 8px 25px rgba(121, 93, 169, 0.3);
+				}
+
+				/* Typography Enhancement */
+				body {
+					font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+					font-weight: 400;
+					line-height: 1.6;
+					letter-spacing: -0.01em;
+				}
+
+				h1, h2, h3, h4, h5, h6 {
+					font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+					font-weight: 600;
+					line-height: 1.2;
+					letter-spacing: -0.02em;
+				}
+
+				h1 {
+					font-size: 2.5em;
+					font-weight: 700;
+				}
+
+				h2 {
+					font-size: 2em;
+					font-weight: 600;
+				}
+
+				h3 {
+					font-size: 1.5em;
+					font-weight: 600;
+				}
+
+				h4 {
+					font-size: 1.25em;
+					font-weight: 500;
+				}
+
+				h5 {
+					font-size: 1.1em;
+					font-weight: 500;
+				}
+
+				/* Code and technical text */
+				code, pre, .tech-tag {
+					font-family: 'JetBrains Mono', 'Courier New', monospace;
+					font-weight: 400;
+				}
+
+				/* Improved text hierarchy */
+				.major h2 {
+					font-size: 2.2em;
+					font-weight: 700;
+					margin-bottom: 0.5em;
+				}
+
+				.major p {
+					font-size: 1.1em;
+					font-weight: 400;
+					color: rgba(0, 0, 0, 0.7);
+				}
+
+				/* Enhanced readability */
+				p {
+					margin-bottom: 1.5em;
+					font-size: 1em;
+					line-height: 1.7;
+				}
+
+				/* Dark mode typography */
+				body.dark-mode {
+					font-weight: 400;
+				}
+
+				body.dark-mode .major p {
+					color: rgba(255, 255, 255, 0.8);
+				}
+
+				body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, body.dark-mode h4, body.dark-mode h5, body.dark-mode h6 {
+					color: #fff;
+				}
+
+				/* Scroll Animations */
+				.scroll-fade-in {
+					opacity: 0;
+					transform: translateY(30px);
+					transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+				}
+
+				.scroll-fade-in.animate {
+					opacity: 1;
+					transform: translateY(0);
+				}
+
+				.scroll-slide-left {
+					opacity: 0;
+					transform: translateX(-50px);
+					transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+				}
+
+				.scroll-slide-left.animate {
+					opacity: 1;
+					transform: translateX(0);
+				}
+
+				.scroll-slide-right {
+					opacity: 0;
+					transform: translateX(50px);
+					transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+				}
+
+				.scroll-slide-right.animate {
+					opacity: 1;
+					transform: translateX(0);
+				}
+
+				.scroll-scale-in {
+					opacity: 0;
+					transform: scale(0.8);
+					transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+				}
+
+				.scroll-scale-in.animate {
+					opacity: 1;
+					transform: scale(1);
+				}
+
+				.scroll-rotate-in {
+					opacity: 0;
+					transform: rotate(-10deg) scale(0.9);
+					transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+				}
+
+				.scroll-rotate-in.animate {
+					opacity: 1;
+					transform: rotate(0deg) scale(1);
+				}
+
+				/* Staggered animations for lists */
+				.stagger-item {
+					opacity: 0;
+					transform: translateY(20px);
+					transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+				}
+
+				.stagger-item.animate {
+					opacity: 1;
+					transform: translateY(0);
+				}
+
+				.stagger-item:nth-child(1) { transition-delay: 0.1s; }
+				.stagger-item:nth-child(2) { transition-delay: 0.2s; }
+				.stagger-item:nth-child(3) { transition-delay: 0.3s; }
+				.stagger-item:nth-child(4) { transition-delay: 0.4s; }
+				.stagger-item:nth-child(5) { transition-delay: 0.5s; }
+				.stagger-item:nth-child(6) { transition-delay: 0.6s; }
+				.stagger-item:nth-child(7) { transition-delay: 0.7s; }
+				.stagger-item:nth-child(8) { transition-delay: 0.8s; }
+
+				/* Loading Screen */
+				#loading-screen {
+					position: fixed;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background: linear-gradient(135deg, #795da9 0%, #a68ce8 100%);
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					z-index: 9999;
+					opacity: 1;
+					transition: opacity 0.5s ease, visibility 0.5s ease;
+				}
+
+				#loading-screen.hidden {
+					opacity: 0;
+					visibility: hidden;
+				}
+
+				.loading-content {
+					text-align: center;
+					color: white;
+				}
+
+				.loading-spinner {
+					width: 60px;
+					height: 60px;
+					border: 4px solid rgba(255, 255, 255, 0.3);
+					border-top: 4px solid white;
+					border-radius: 50%;
+					animation: spin 1s linear infinite;
+					margin: 0 auto 1.5em;
+				}
+
+				@keyframes spin {
+					0% { transform: rotate(0deg); }
+					100% { transform: rotate(360deg); }
+				}
+
+				.loading-content h2 {
+					font-size: 1.5em;
+					margin-bottom: 0.5em;
+					font-weight: 300;
+				}
+
+				.loading-content p {
+					font-size: 0.9em;
+					opacity: 0.8;
+				}
+
+				/* Skeleton Loading Effects */
+				.skeleton {
+					background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+					background-size: 200% 100%;
+					animation: skeleton-loading 1.5s infinite;
+				}
+
+				@keyframes skeleton-loading {
+					0% { background-position: 200% 0; }
+					100% { background-position: -200% 0; }
+				}
+
+				.certification-tile.skeleton-loading {
+					min-height: 120px;
+				}
+
+				.certification-tile.skeleton-loading .cert-image,
+				.certification-tile.skeleton-loading .cert-details,
+				.certification-tile.skeleton-loading .institution-logo {
+					background: linear-gradient(90deg, rgba(144, 144, 144, 0.1) 25%, rgba(144, 144, 144, 0.2) 50%, rgba(144, 144, 144, 0.1) 75%);
+					background-size: 200% 100%;
+					animation: skeleton-loading 1.5s infinite;
+				}
+
+				.certification-tile.skeleton-loading .cert-image img,
+				.certification-tile.skeleton-loading .institution-logo img {
+					opacity: 0;
+				}
+
+				/* Enhanced animations */
+				.fade-in {
+					opacity: 0;
+					transform: translateY(20px);
+					animation: fadeInUp 0.6s ease forwards;
+				}
+
+				.slide-in-left {
+					opacity: 0;
+					transform: translateX(-30px);
+					animation: slideInLeft 0.6s ease forwards;
+				}
+
+				.slide-in-right {
+					opacity: 0;
+					transform: translateX(30px);
+					animation: slideInRight 0.6s ease forwards;
+				}
+
+				@keyframes slideInLeft {
+					from {
+						opacity: 0;
+						transform: translateX(-30px);
+					}
+					to {
+						opacity: 1;
+						transform: translateX(0);
+					}
+				}
+
+				@keyframes slideInRight {
+					from {
+						opacity: 0;
+						transform: translateX(30px);
+					}
+					to {
+						opacity: 1;
+						transform: translateX(0);
+					}
 				}
 			</style>
 
