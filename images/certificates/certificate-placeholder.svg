@@ -1,0 +1,7 @@
+<svg width="80" height="60" viewBox="0 0 80 60" xmlns="http://www.w3.org/2000/svg">
+  <rect width="80" height="60" fill="#f5f5f5" stroke="#ddd" stroke-width="1" rx="4"/>
+  <circle cx="25" cy="20" r="8" fill="#49bf9d" opacity="0.3"/>
+  <rect x="15" y="35" width="50" height="3" fill="#49bf9d" opacity="0.5" rx="1"/>
+  <rect x="20" y="42" width="35" height="2" fill="#49bf9d" opacity="0.3" rx="1"/>
+  <text x="40" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#666">CERTIFICATE</text>
+</svg>
