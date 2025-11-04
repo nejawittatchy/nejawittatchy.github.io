@@ -43,6 +43,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 		<!-- Security Headers -->
 		<meta http-equiv="X-Content-Type-Options" content="nosniff" />
@@ -265,14 +266,14 @@
 									
 									.progress {
 										height: 100%;
-										background: linear-gradient(90deg, #e2804d 0%, #d46d4d 50%, #b95a4c 100%);
+										background: linear-gradient(90deg, #10b981 0%, #06b6d4 50%, #0891b2 100%);
 										border-radius: 5px;
 										transition: width 1s ease-in-out;
 									}
 									
 									.skill-category h5 {
 										margin-bottom: 1em;
-										color: #d46d4d;
+										color: #10b981;
 									}
 									
 									.skill-category h5 i {
@@ -303,18 +304,18 @@
 										align-items: center;
 										gap: 0.8em;
 										padding: 1em 1.2em;
-										background: #e2804d;
+										background: #10b981;
 										color: white;
 										border-radius: 25px;
 										transition: all 0.3s ease;
-										box-shadow: 0 4px 15px rgba(226, 128, 77, 0.3);
+										box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
 										font-weight: 500;
 									}
 									
 									.feature-icons li:hover {
 										transform: translateY(-3px);
-										box-shadow: 0 8px 25px rgba(226, 128, 77, 0.4);
-										background: linear-gradient(135deg, #e2804d 0%, #b95a4c 100%);
+										box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
+										background: linear-gradient(135deg, #10b981 0%, #0891b2 100%);
 									}
 									
 									.feature-icons li .icon {
@@ -325,12 +326,12 @@
 									
 									/* Dark mode styles for personal interests */
 									body.dark-mode .feature-icons li {
-										background: #e2804d;
-										box-shadow: 0 4px 15px rgba(226, 128, 77, 0.2);
+										background: #10b981;
+										box-shadow: 0 4px 15px rgba(16, 185, 129, 0.2);
 									}
 									
 									body.dark-mode .feature-icons li:hover {
-										box-shadow: 0 8px 25px rgba(226, 128, 77, 0.3);
+										box-shadow: 0 8px 25px rgba(16, 185, 129, 0.3);
 									}
 								</style>
 							</div>
@@ -1009,12 +1010,12 @@
 											<div class="contact-social">
 											<h4>Find me on</h4>
 											<ul class="social-icons">
-												<li><a href="https://www.linkedin.com/in/nejawittatchy/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-												<li><a href="https://github.com/nejawittatchy" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="https://www.facebook.com/NejaWittatchy" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="https://www.instagram.com/neja.khw/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="https://medium.com/@nejawittatchy" class="icon brands alt fa-medium"><span class="label">Medium</span></a></li>
-												<li><a href="https://www.tiktok.com/@neja.khw" class="icon brands alt fa-tiktok"><span class="label">TikTok</span></a></li>
+												<li><a href="https://www.linkedin.com/in/nejawittatchy/" class="fa-brands fa-linkedin" aria-label="LinkedIn"></a></li>
+												<li><a href="https://github.com/nejawittatchy" class="fa-brands fa-github" aria-label="GitHub"></a></li>
+												<li><a href="https://www.facebook.com/NejaWittatchy" class="fa-brands fa-facebook-f" aria-label="Facebook"></a></li>
+												<li><a href="https://www.instagram.com/neja.khw/" class="fa-brands fa-instagram" aria-label="Instagram"></a></li>
+												<li><a href="https://medium.com/@nejawittatchy" class="fa-brands fa-medium" aria-label="Medium"></a></li>
+												<li><a href="https://www.tiktok.com/@neja.khw" class="fa-brands fa-tiktok" aria-label="TikTok"></a></li>
 
 											</ul>
 										</div>
@@ -1023,8 +1024,8 @@
 											<h4>Find me on</h4>
 											<ul class="social-icons">
 												<li><a href="https://www.linkedin.com/in/nejawittatchy/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-												<li><a href="https://github.com/nejawittatchy" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="https://www.facebook.com/NejaWittatchy" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="https://github.com/nejawittatchy" class="icon brands alt fab fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="https://www.facebook.com/NejaWittatchy" class="icon brands alt fab fa-facebook-f"><span class="label">Facebook</span></a></li>
 												<li><a href="https://www.instagram.com/neja.khw/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
 											</ul>
 										</div>-->
@@ -1156,7 +1157,7 @@
 									
 									.contact-method .icon {
 										font-size: 2em;
-										color: #2c5aa0;
+										color: #253d62;
 										margin-bottom: 0.5em;
 									}
 									
@@ -1174,22 +1175,29 @@
 									}
 									
 									.social-icons li a {
-										display: block;
+										display: flex;
+										align-items: center;
+										justify-content: center;
 										width: 50px;
 										height: 50px;
-										line-height: 50px;
-										text-align: center;
-										background: rgba(144, 144, 144, 0.075);
-										border: 1px solid #e6e0f3;
-										border-radius: 100%;
-										color: #666;
+										background: rgba(255, 255, 255, 0.1);
+										backdrop-filter: blur(10px);
+										-webkit-backdrop-filter: blur(10px);
+										border: 1px solid rgba(255, 255, 255, 0.2);
+										border-radius: 50%;
+										color: #253d62 !important;
 										font-size: 1.25em;
 										transition: all 0.3s ease;
+										position: relative;
+										overflow: hidden;
+										text-decoration: none;
 									}
 									
 									.social-icons li a:hover {
 										background: #2c5aa0;
-										color: #fff;
+										
+										transform: translateY(-3px);
+										box-shadow: 0 8px 25px rgba(44, 90, 160, 0.3);
 									}
 									
 									.contact-divider {
@@ -1558,7 +1566,7 @@
 				}
 				
 				body.dark-mode .progress {
-					box-shadow: 0 0 8px rgba(226, 128, 77, 0.5);
+					box-shadow: 0 0 8px rgba(16, 185, 129, 0.5);
 				}
 				
 				body.dark-mode .feature-icons li {
@@ -1596,12 +1604,17 @@
 					box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 				}
 				
-				body.dark-mode .social-icons li a {
-					background: #1e1e24;
-					color: #e3e3e3;
-				}
-				
-				body.dark-mode #theme-toggle {
+								body.dark-mode .social-icons li a {
+									background: rgba(30, 30, 36, 0.8);
+									border-color: rgba(255, 255, 255, 0.1);
+									color: #00bcd4 !important;
+								}
+								
+								body.dark-mode .social-icons li a:hover {
+									background: #00bcd4;
+									color: #121212 !important;
+									box-shadow: 0 8px 25px rgba(0, 188, 212, 0.3);
+								}				body.dark-mode #theme-toggle {
 					background: #f5f5f5;
 				}
 				
@@ -1833,14 +1846,13 @@
 				}
 
 				.social-icons li a::before {
-					content: '';
 					position: absolute;
 					top: 0;
 					left: 0;
 					right: 0;
 					bottom: 0;
-					background: linear-gradient(135deg, #2c5aa0, #00bcd4);
-					opacity: 0;
+					background: linear-gradient(135deg, #98c6d3, #5e310300);
+					opacity: 1;
 					transition: opacity 0.3s ease;
 				}
 
@@ -1851,7 +1863,7 @@
 				.social-icons li a:hover {
 					color: white;
 					transform: translateY(-3px);
-					box-shadow: 0 8px 25px rgba(44, 90, 160, 0.3);
+					box-shadow: 0 8px 25px rgba(15, 57, 117, 0.3);
 				}
 
 				/* Typography Enhancement */
