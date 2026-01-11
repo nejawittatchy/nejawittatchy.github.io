@@ -1,0 +1,16 @@
+{
+    "name": "Neja Wittatchy Portfolio",
+    "short_name": "Neja",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#795da9",
+    "description": "Portfolio of Neja Wittatchy - Software Engineer",
+    "icons": [
+        {
+            "src": "images/profile2.png",
+            "sizes": "192x192 512x512",
+            "type": "image/png"
+        }
+    ]
+}
