@@ -73,6 +73,7 @@
 						<li><a href="#five">Experience</a></li>
 						<li><a href="#three">Accomplishments</a></li>
 						<li><a href="#projects">Projects</a></li>
+						<li><a href="#articles">Articles</a></li>
 						<li><a href="#six">Contact Me</a></li>
 					</ul>
 				</nav>
@@ -985,7 +986,381 @@
 									}
 								</style>
 							</div>
-						<!-- Six -->
+						</section>
+
+						<!-- Articles -->
+						<section id="articles" class="scroll-slide-left">
+							<div class="container">
+								<h2 style="font-size: 1.75em">Medium Articles</h2>
+								<p><i>Read my latest thoughts and experiences...</i></p>
+								
+								<div class="articles-container">
+									<div class="article-list" id="medium-article-list">
+										<div class="loading-spinner" style="text-align:center; padding: 2em; color: #888;">Loading articles...</div>
+									</div>
+									<div class="article-webview-container">
+										<div class="article-webview" id="medium-article-content">
+											<div class="webview-placeholder">Select an article from the list to read it here.</div>
+										</div>
+									</div>
+								</div>
+								
+								<script>
+									document.addEventListener("DOMContentLoaded", function() {
+										const rssUrl = "https://medium.com/feed/@nejawittatchy";
+										const apiUrl = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(rssUrl);
+										
+										fetch(apiUrl)
+											.then(response => response.json())
+											.then(data => {
+												const listContainer = document.getElementById("medium-article-list");
+												if (data.status === "ok" && data.items.length > 0) {
+													listContainer.innerHTML = "";
+													let firstItem = true;
+													
+													data.items.forEach((item, index) => {
+														// Create list item
+														const div = document.createElement("div");
+														div.className = "article-item" + (firstItem ? " active" : "");
+														
+														// Format date
+														const pubDate = new Date(item.pubDate);
+														const dateStr = pubDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+														
+														div.innerHTML = `
+															<h4>${item.title}</h4>
+															<p>${dateStr}</p>
+														`;
+														
+														div.addEventListener("click", function() {
+															// Update active class
+															document.querySelectorAll(".article-item").forEach(el => el.classList.remove("active"));
+															div.classList.add("active");
+															
+															// Update content
+															renderArticleContent(item);
+														});
+														
+														listContainer.appendChild(div);
+														
+														// Render first item content initially
+														if (firstItem) {
+															renderArticleContent(item);
+															firstItem = false;
+														}
+													});
+												} else {
+													listContainer.innerHTML = "<div style='padding:1em; color:#888;'>No articles found.</div>";
+												}
+											})
+											.catch(error => {
+												console.error("Error fetching Medium articles:", error);
+												document.getElementById("medium-article-list").innerHTML = "<div style='padding:1em; color:red;'>Failed to load articles.</div>";
+											});
+											
+										function renderArticleContent(item) {
+											const contentContainer = document.getElementById("medium-article-content");
+											
+											// Extract pure text from content for safe injection (Medium RSS content is generally safe, but we should make sure styling works)
+											let htmlContent = item.content || item.description;
+											
+											contentContainer.innerHTML = `
+												<h2 style="font-size: 1.8em; margin-bottom: 0.2em;">${item.title}</h2>
+												<div style="color: #888; font-size: 0.9em; margin-bottom: 2em; border-bottom: 1px solid rgba(128,128,128,0.2); padding-bottom: 1em;">
+													Published on ${new Date(item.pubDate).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+													&nbsp;|&nbsp; <a href="${item.link}" target="_blank" style="color: #2c5aa0; text-decoration:none;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Read on Medium</a>
+												</div>
+												<div class="article-body">
+													${htmlContent}
+												</div>
+											`;
+										}
+									});
+								</script>
+								
+								<style>
+									.articles-container {
+										display: flex;
+										gap: 0;
+										margin-top: 2em;
+										height: 600px;
+										background: rgba(255, 255, 255, 0.7);
+										backdrop-filter: blur(10px);
+										-webkit-backdrop-filter: blur(10px);
+										border-radius: 16px;
+										border: 1px solid rgba(0, 0, 0, 0.1);
+										overflow: hidden;
+										box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+									}
+									
+									.article-list {
+										flex: 0 0 320px;
+										overflow-y: auto;
+										border-right: 1px solid rgba(0, 0, 0, 0.1);
+										padding: 1.5em;
+										background: rgba(0, 0, 0, 0.02);
+									}
+									
+									.article-list::-webkit-scrollbar {
+										width: 6px;
+									}
+									.article-list::-webkit-scrollbar-thumb {
+										background: rgba(0,0,0,0.2);
+										border-radius: 10px;
+									}
+									
+									.article-item {
+										padding: 1.2em;
+										border-radius: 12px;
+										cursor: pointer;
+										transition: all 0.3s ease;
+										margin-bottom: 1em;
+										border: 1px solid transparent;
+										background: rgba(255, 255, 255, 0.5);
+									}
+									
+									.article-item:hover {
+										background: rgba(255, 255, 255, 0.8);
+										transform: translateY(-2px);
+										box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+									}
+									
+									.article-item.active {
+										background: rgba(44, 90, 160, 0.1);
+										border-color: rgba(44, 90, 160, 0.2);
+										box-shadow: 0 4px 15px rgba(44, 90, 160, 0.1);
+									}
+									
+									.article-item h4 {
+										margin: 0 0 0.5em 0;
+										font-size: 1.05em;
+										line-height: 1.4;
+										color: #333;
+									}
+									
+									.article-item p {
+										font-size: 0.85em;
+										color: #777;
+										margin: 0;
+									}
+									
+									.article-webview-container {
+										flex: 1;
+										padding: 2.5em;
+										overflow-y: auto;
+										background: #fff;
+										scroll-behavior: smooth;
+									}
+									
+									.article-webview-container::-webkit-scrollbar {
+										width: 8px;
+									}
+									.article-webview-container::-webkit-scrollbar-thumb {
+										background: rgba(0,0,0,0.2);
+										border-radius: 10px;
+									}
+									
+									.article-webview {
+										max-width: 750px;
+										margin: 0 auto;
+										color: #333;
+									}
+									
+									.article-body {
+										font-family: 'Inter', sans-serif;
+										font-size: 1.05em;
+									}
+									
+									.article-body img {
+										max-width: 100%;
+										height: auto;
+										border-radius: 8px;
+										margin: 2em 0;
+										box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+									}
+									
+									.article-body h1, .article-body h2, .article-body h3, .article-body h4 {
+										color: #222;
+										margin-top: 1.5em;
+										margin-bottom: 0.8em;
+										line-height: 1.3;
+									}
+									
+									.article-body p {
+										line-height: 1.8;
+										color: #444;
+										margin-bottom: 1.5em;
+									}
+									
+									.article-body blockquote {
+										border-left: 4px solid #2c5aa0;
+										padding-left: 1.5em;
+										margin: 1.5em 0;
+										font-style: italic;
+										color: #555;
+										background: rgba(44, 90, 160, 0.05);
+										padding: 1em 1em 1em 1.5em;
+										border-radius: 0 8px 8px 0;
+									}
+									
+									.article-body a {
+										color: #2c5aa0;
+										text-decoration: underline;
+										text-decoration-color: rgba(44, 90, 160, 0.4);
+										text-underline-offset: 3px;
+									}
+									
+									.article-body a:hover {
+										text-decoration-color: #2c5aa0;
+									}
+									
+									.article-body figure {
+										margin: 2.5em 0;
+										text-align: center;
+									}
+									
+									.article-body figcaption {
+										font-size: 0.85em;
+										color: #888;
+										margin-top: 0.8em;
+									}
+									
+									.article-body ul, .article-body ol {
+										margin-bottom: 1.5em;
+										padding-left: 1.5em;
+									}
+									
+									.article-body li {
+										margin-bottom: 0.5em;
+										line-height: 1.7;
+									}
+									
+									.article-body pre {
+										background: #1e1e24;
+										color: #e3e3e3;
+										padding: 1.5em;
+										border-radius: 8px;
+										overflow-x: auto;
+										margin: 1.5em 0;
+									}
+									
+									.article-body code {
+										font-family: 'JetBrains Mono', monospace;
+										font-size: 0.9em;
+										background: rgba(0,0,0,0.05);
+										padding: 0.2em 0.4em;
+										border-radius: 4px;
+									}
+									
+									.article-body pre code {
+										background: transparent;
+										padding: 0;
+									}
+									
+									.webview-placeholder {
+										display: flex;
+										justify-content: center;
+										align-items: center;
+										height: 100%;
+										min-height: 400px;
+										color: #888;
+										font-style: italic;
+									}
+									
+									/* Dark Mode Support */
+									body.dark-mode .articles-container {
+										background: rgba(30, 30, 36, 0.7);
+										border-color: rgba(255, 255, 255, 0.1);
+										box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+									}
+									
+									body.dark-mode .article-list {
+										border-right-color: rgba(255, 255, 255, 0.1);
+										background: rgba(0, 0, 0, 0.3);
+									}
+									
+									body.dark-mode .article-item {
+										background: rgba(255, 255, 255, 0.05);
+									}
+									
+									body.dark-mode .article-item:hover {
+										background: rgba(255, 255, 255, 0.1);
+										box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+									}
+									
+									body.dark-mode .article-item.active {
+										background: rgba(166, 140, 232, 0.15);
+										border-color: rgba(166, 140, 232, 0.3);
+									}
+									
+									body.dark-mode .article-item h4 {
+										color: #e3e3e3;
+									}
+									
+									body.dark-mode .article-item p {
+										color: #aaa;
+									}
+									
+									body.dark-mode .article-webview-container {
+										background: #121212;
+									}
+									
+									body.dark-mode .article-webview h2 {
+										color: #fff;
+									}
+									
+									body.dark-mode .article-body h1, 
+									body.dark-mode .article-body h2, 
+									body.dark-mode .article-body h3, 
+									body.dark-mode .article-body h4 {
+										color: #e3e3e3;
+									}
+									
+									body.dark-mode .article-body p,
+									body.dark-mode .article-body li {
+										color: #ccc;
+									}
+									
+									body.dark-mode .article-body a {
+										color: #a68ce8;
+										text-decoration-color: rgba(166, 140, 232, 0.4);
+									}
+									
+									body.dark-mode .article-body a:hover {
+										text-decoration-color: #a68ce8;
+									}
+									
+									body.dark-mode .article-body blockquote {
+										border-left-color: #a68ce8;
+										color: #bbb;
+										background: rgba(166, 140, 232, 0.05);
+									}
+									
+									body.dark-mode .article-body code {
+										background: rgba(255,255,255,0.1);
+									}
+									
+									@media screen and (max-width: 800px) {
+										.articles-container {
+											flex-direction: column;
+											height: auto;
+										}
+										.article-list {
+											flex: none;
+											height: 250px;
+											border-right: none;
+											border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+										}
+										body.dark-mode .article-list {
+											border-bottom-color: rgba(255, 255, 255, 0.1);
+										}
+										.article-webview-container {
+											height: 600px;
+											padding: 1.5em;
+										}
+									}
+								</style>
+							</div>
 						</section>
 							<section id="six" class="scroll-rotate-in">
 								<div class="container">
